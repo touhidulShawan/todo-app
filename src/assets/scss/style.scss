@@ -99,8 +99,13 @@ form {
       font-weight: 400;
       span {
         i {
-          color: red;
+          color: var(--light);
           cursor: pointer;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: red;
+          }
         }
       }
     }
