@@ -90,6 +90,7 @@ form {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 
     li {
       font-family: var(--primary_font);
@@ -132,6 +133,17 @@ form {
     input[type="text"] {
       width: 200px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 658px) {
+  .todoItem__container {
+    margin: 20px 5px;
+  }
+  .Todolist {
+    li {
+      width: 95% !important;
     }
   }
 }
