@@ -46,15 +46,17 @@ export default class App extends Component {
           inputValue={this.handleChangeInput}
           value={this.state.todoText}
         />
-        {this.state.todos.map((todo, key) => {
-          return (
-            <TodoList
-              todo={todo.todo}
-              key={key}
-              deleteTodo={() => this.deleteTodo(key)}
-            />
-          );
-        })}
+        <div className="todoItem__container">
+          {this.state.todos.map((todo, key) => {
+            return (
+              <TodoList
+                todo={todo.todo}
+                key={key}
+                deleteTodo={() => this.deleteTodo(key)}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }
